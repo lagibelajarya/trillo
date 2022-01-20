@@ -564,7 +564,11 @@
     transform: translateY(100%);
   }
   &:hover &__invisible {
-    top: -10%;
+    top: 0;
+
+    @include respond(phone){
+      top: -10%;
+    }
   }
   &:focus {
     outline: none;

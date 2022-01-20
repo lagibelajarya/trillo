@@ -449,7 +449,10 @@ body {
   .btn:hover .btn__visible {
     transform: translateY(100%); }
   .btn:hover .btn__invisible {
-    top: -10%; }
+    top: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .btn:hover .btn__invisible {
+        top: -10%; } }
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
